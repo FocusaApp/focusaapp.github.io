@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body, html {
+    background-color: #EEE;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.homepageSection  {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 2600px;
+}
+
+.homepageSection > .homepageSectionContent  {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.homepageSection.homepageSectionHead  {
+    color: #000;
+    background-image: url(../images/homepageHeadBackground3.png);
+    background-size: 2600px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #FFF;
+    padding-bottom: 30px;
+}
+
+
+.homepageSection.homepageSectionTwo  {
+    background-image: url(../images/homepageTwoBackground.png);
+    background-size: 2600px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #000;
+    color: #FFF;
+    padding: 30px 0;
+}
+
+.homepageSection.homepageSectionFoot  {
+    background-color: #FFF;
+    color: #000;
+    padding: 30px 0 10px 0;
+}
+
+#homepageHeadHeadline {
+    text-align: center;
+    margin: 100px auto 0 auto;
+    font-size: 50px;
+}
+/* ==================== */ 
+
+#globalNav {
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    max-width: 2600px;
+    padding: 45px 0;
+    margin: auto;
+    transition: 0.3s;
+    top: 0;
+    height: 20px;
+    z-index: 10;
+}
+
+#globalNav > div {
+    margin: auto;
+    max-width: 1700px;
+}
+
+#globalNavImg {
+    height: 25px;
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+#globalNavImg:hover {
+    opacity: 95%;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+#globalNavBtn  {
+    background-color: #007aff;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 5px 12px;
+    color: #FFF;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+li:not(#globalNavLogo) {
+    float: right;
+}
+  
+li a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 25px;
+    cursor: pointer;
+    padding: 5px 0px
+}
+  
+li a:hover:not(.active) {
+    opacity: 0.7;
+}
+  
+.active {
+    opacity: 0.7;
+}
+
+  
+/* ==================== */
+
+.tiles.isHomepageHead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "tileHead1 tileHead1 tileHead2"
+        "tileHead3 tileHead3 tileHead2"
+        "tileHead4 tileHead4 tileHead4"
+        "tileHead5 tileHead6 tileHead6";
+    margin: 150px auto 0 auto;
+    max-width: 1000px;
+}
+  
+.tile.isHomepageHead {
+    height: 50px;
+    background-color: #eee;
+    margin: 10px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.tile.isHomepageHead:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 15px rgba(1,1,1,0.2);
+}
+
+.tile h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.tile p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.tile p span {
+    opacity: 0.5;
+}
+
+.tile1.isHomepageHead { 
+    grid-area: tileHead1; 
+    text-align: left;
+}
+  
+.tile2.isHomepageHead {
+    grid-area: tileHead2;
+    height: 360px;
+}
+  
+.tile3.isHomepageHead {
+    grid-area: tileHead3;
+}
+  
+.tile4.isHomepageHead {
+    grid-area: tileHead4;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(101,249,140,1) 50%);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.tile4.isHomepageHead h3 {
+   font-size: 30px;
+   margin-top: 35px;
+   float: left;
+}
+
+.tile4.isHomepageHead p {
+    margin-top: 60px;
+    float: right;
+ }
+
+ .tile4.isHomepageHead h2 {
+    color: #FFF;
+    font-size: 60px;
+    text-align: center;
+ }
+
+.tile4.isHomepageHead .h2Container {
+    margin: 35px auto 0 auto;
+    width: 400px;
+ }
+ 
+
+.tile5.isHomepageHead {
+    grid-area: tileHead5;
+}
+  
+.tile6.isHomepageHead {
+    grid-area: tileHead6;
+}
+  
+
+
+/* =----------------------- */
+
+.tiles.isHomepageTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "tile1 tile2 tile2"
+        "tile1 tile3 tile4"
+        "tile5 tile5 tile4";
+    margin: 0 auto;
+    max-width: 1000px;
+}
+  
+.tile.isHomepageTwo {
+    height: 50px;
+    background-color: #222;
+    margin: 10px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.tile.isHomepageTwo:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 15px rgba(1,1,1,0.2);
+}
+
+.tile1.isHomepageTwo { 
+    grid-area: tile1; 
+    height: 360px;
+}
+  
+.tile2.isHomepageTwo {
+    grid-area: tile2;
+}
+  
+.tile3.isHomepageTwo {
+    grid-area: tile3;
+}
+  
+.tile4.isHomepageTwo {
+    grid-area: tile4;
+    height: 360px;
+}
+ 
+.tile5.isHomepageTwo {
+    grid-area: tile5;
+}
+  
