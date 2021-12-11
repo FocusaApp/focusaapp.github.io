@@ -314,14 +314,13 @@ li a:hover:not(.active) {
 }
 
 .blogPreviewContainer {
-    border-radius: 7px;
     width: 50%;
     float: left;
 }
 
 .blogPreview {
     background-color: #EEE;
-    border-radius: 7px;
+    border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
     margin: 15px;
@@ -334,13 +333,21 @@ li a:hover:not(.active) {
 
 .blogPreview:hover .blogPreviewImage {
     scale: 1.02;
-    border-radius: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(1,1,1,0.3);
 }
 
 .blogPreviewOverline {
     font-weight: 800;
     margin: 20px 20px 5px 20px;
     padding: 0;
+}
+
+.blogPreviewOverline span {
+    font-weight: 200;
+    margin-left: 9px;
+    padding-left: 9px;
+    border-left: 1px solid #222;
 }
 
 .blogPreviewTitle {
@@ -358,5 +365,49 @@ li a:hover:not(.active) {
 .blogPreviewImage {
     width: 100%;
     transition: 0.3s;
-    border-radius: 15px 15px 0 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.articleContainer {
+    margin: auto;
+    max-width: 850px;
+    padding: 50px 0;
+}
+
+.articleHeadHeadline {
+    font-size: 45px;
+
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.articleHeadOverline {
+    font-size: 20px;
+    padding: 0;
+    opacity: 0.7;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.articleHeadOverline span {
+    font-weight: 200;
+    margin-left: 9px;
+    padding-left: 9px;
+    border-left: 1px solid #777;
+}
+
+.articleContainer > p:not(.articleHeadOverline) {
+    margin: 20px auto;
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+img.articleImage {
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 10px 0;
 }
