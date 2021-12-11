@@ -370,8 +370,8 @@ li a:hover:not(.active) {
 
 .articleContainer {
     margin: auto;
-    max-width: 850px;
-    padding: 50px 0;
+    max-width: 900px;
+    padding: 50px 25px;
 }
 
 .articleHeadHeadline {
@@ -410,4 +410,14 @@ img.articleImage {
     transition: 0.3s;
     cursor: pointer;
     margin: 10px 0;
+}
+
+.articleContainer > p > a {
+    color: #00c7a2;
+    text-decoration: underline;
+    transition:0.3s;
+}
+
+.articleContainer > p > a:hover {
+    color: #006b47;
 }
